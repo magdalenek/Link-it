@@ -11,5 +11,5 @@
 - Upgrade to word-recognition for website suggestions, as opposed to website links solely.
 
 **Technology:**
-- A sample was made using Microsoft Computer Vision API, currently in process of adding Tess Two library.
+- A sample was made using Microsoft Computer Vision API, currently in process of replacing with Tess Two library.
 
