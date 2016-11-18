@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/space_kitten"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:drawablePadding="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/greenish"
+        android:paddingLeft="30dp"
+        android:paddingRight="26dp"
+        android:id="@+id/msg"
+        android:textColor="#ffffff"
+        android:hint="Enter message"
+        android:layout_weight="0.04"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:id="@+id/save"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:background="@drawable/save"
+        android:onClick="save_message"
+        android:layout_below="@+id/msg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:id="@+id/load"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:background="@drawable/load"
+        android:onClick="load_message"
+        android:layout_below="@+id/save"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:textStyle="bold"
+        android:text="Your Links"
+        android:layout_margin="10dp"
+        android:textColor="#f0f0df"
+        android:background="@color/greenish"
+        android:id="@+id/display"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.76"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/load"
+        android:autoLink="web"
+        android:linksClickable="true"
+        />
+
+</RelativeLayout>
